@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/xtvBuscarE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del contacto a eliminar:" />
+
+    <EditText
+        android:id="@+id/xetBusquedaE"
+        android:layout_below="@+id/xtvBuscarE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete" />
+
+    <Button
+        android:id="@+id/xbBorrarE"
+        android:layout_below="@+id/xetBusquedaE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar"/>
+
+</RelativeLayout>

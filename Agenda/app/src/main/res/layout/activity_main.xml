@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/xibAgregarContacto"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/xibVerContactos"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/xibAgregarContacto"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/sym_def_app_icon" />
+
+    <ImageButton
+        android:id="@+id/xibModificarContacto"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/xibVerContactos"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/xibEliminarContacto"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/xibModificarContacto"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/presence_offline" />
+
+    </RelativeLayout>

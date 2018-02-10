@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CrearContacto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/xtvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre(s):" />
+
+        <EditText
+            android:id="@+id/xetNombre"
+            android:layout_below="@+id/xtvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xtvApellidoPaterno"
+            android:layout_below="@+id/xetNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Paterno:" />
+
+        <EditText
+            android:id="@+id/xetApellidoPaterno"
+            android:layout_below="@+id/xtvApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xtvApellidoMaterno"
+            android:layout_below="@+id/xetApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Materno:" />
+
+        <EditText
+            android:id="@+id/xetApellidoMaterno"
+            android:layout_below="@+id/xtvApellidoMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xtvNumero"
+            android:layout_below="@+id/xetApellidoMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número Telefónico:" />
+
+        <EditText
+            android:id="@+id/xetNumero"
+            android:layout_below="@+id/xtvNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/xtvSexo"
+            android:layout_below="@+id/xetNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"/>
+
+        <RadioGroup
+
+            android:id="@+id/xrgSexo"
+            android:layout_below="@+id/xtvSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/xrbMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino"/>
+
+            <RadioButton
+                android:id="@+id/xrbFemenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/xtvHobbies"
+            android:layout_below="@+id/xrgSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies:"/>
+
+        <CheckBox
+            android:id="@+id/xcbJugarVideojuegos"
+            android:layout_below="@id/xtvHobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jugar Videojuegos" />
+
+        <CheckBox
+            android:id="@+id/xcbLeer"
+            android:layout_below="@id/xcbJugarVideojuegos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leer" />
+
+        <CheckBox
+            android:id="@+id/xcbEscucharMusica"
+            android:layout_below="@id/xcbLeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escuchar Música" />
+
+        <CheckBox
+            android:id="@+id/xcbVerPeliculas"
+            android:layout_below="@id/xcbEscucharMusica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Peliculas" />
+
+        <Button
+            android:id="@+id/xbAgregar"
+            android:layout_below="@+id/xcbVerPeliculas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"/>
+
+    </RelativeLayout>
+
+</ScrollView>
